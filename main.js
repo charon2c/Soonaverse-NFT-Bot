@@ -1,10 +1,10 @@
-import { Client, Intents } from "discord.js";
+import { Client, GatewayIntentBits } from "discord.js";
 import  { TreasuryManager } from "./modules/treasuryManager.js";
 import { NftRoleManager } from "./modules/nftRoleManager.js";
 import { SmrNftHolderManager } from "./modules/smrNftHolderManager.js";
 import { DatabaseManager } from "./modules/DatabaseManager.js";
 
-let intents = new Intents(Intents.NON_PRIVILEGED);
+let intents = new Intents(GatewayIntentBits.NON_PRIVILEGED);
 
 intents.add('GUILDS');
 intents.add('GUILD_MEMBERS');
